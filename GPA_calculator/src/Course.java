@@ -55,7 +55,7 @@ public class Course {
                 this.numGrade = 1.75;
             }
             default -> {
-                System.out.println("I believe grade has a typo u silly goose.");
+                System.out.println("I believe there is a typo u silly goose.");
             }
         }
         return numGrade;
