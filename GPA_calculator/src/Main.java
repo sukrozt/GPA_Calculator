@@ -1,19 +1,14 @@
-import org.w3c.dom.ls.LSInput;
 
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Course[] courses;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("name of the course: ");
-        String course = scan.next();
-        public void addCourse(Course course) {
-            for (int i = 0; i < courses.length; i++) {
-                if (courses[i] == null) {
-                    courses[i] = course;
-                    break;
-                }
-            }
+        try{
+            Calculation.doCalculation();
         }
+        catch (Exception NumberFormatException){
+            System.out.println("number of courses should be an integer");}
     }
 }
+
+//errors will be specialized
+//ui will be in a loop until its calculated
+//there will be an ui
